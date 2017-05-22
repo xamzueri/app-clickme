@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClickMe.Views.MainPage"
+             Title="Click Me!"
+             >
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="2*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="200" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <Button Text="Click Me!" VerticalOptions="Center" HorizontalOptions="Center" Clicked="ButtonClick" />
+    <Label AutomationId="BtnClick" Grid.Row="1" Text="{Binding ClickNumber}" FontSize="{Binding ClickNumber}" VerticalOptions="Center" HorizontalOptions="Center" />
+  </Grid>
+  
+  
+  
+</ContentPage>
